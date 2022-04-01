@@ -9,5 +9,6 @@ public class UserPoxyTest {
         ApplicationContext ac=new ClassPathXmlApplicationContext("bean1.xml");
         User user=(User)ac.getBean("user",User.class);
         user.doSome();
+        user.doSome2();
     }
 }
